@@ -1,6 +1,8 @@
 Projeto Front-End.
 
 Projeto desenvolvido com a turma de Front-End Básico com responsividade nativa.
+# 
+Tecnologias:
 
 ![](https://img.shields.io/badge/VSCode-000?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)  Ambiente de desenvolvimento do projeto
 
