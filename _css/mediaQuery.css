@@ -1,0 +1,142 @@
+@import url(./variables.css);
+
+/* Arquivo com funções nativas de ajuste de tela (Responsividade) */
+
+/* Resolução de 320px até 568px: Medida de Tela para  celulares com baixa resolução. */
+/* Resolução de 568px até 768px: Medida de Tela para  celulares com alta resolução. */
+/* Resolução de 768px até 992px ou 998px: Medida de Tela para Tablets. */
+/* Resolução superior a 992px ou 998px: Medida de Tela para Notebook e Desktop. */
+
+/* Essa função e responsável pelo ajuste de tela nos dispositivos: Tablet, Notebook e Desktop. */
+@media screen and (min-width: 768px){
+    .formLogin, .formCadastro{
+        text-align: center;
+        background-color: var(--cor-cinza-light);
+        border-radius: 8px;
+        padding-top: 1.8rem;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .formLogin{
+        height: 685px;
+        margin-bottom: 2rem;
+    }
+
+    .imgLogotipo{
+        width: 220px; 
+
+    }
+
+    .LayoutMenuDesktop {
+        text-align: right;
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    .LayoutMenuMobile {
+        display: none;
+       
+    }
+
+    .boxForm {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 3rem;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    
+   
+    
+    .end {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+/*  Função de Responsividade para Resolução Máxima de 768px (Celular). */
+
+@media screen and (max-width: 768px) {
+    
+    .imgUser{
+        width: 100%;
+        max-width: 210px;
+        border-radius: 50%; 
+    }
+    
+    .LayoutMenuDesktop {
+        display: none;
+        
+    }
+
+    .LayoutMenuMobile {
+        width: 100%;
+        left: -140%;
+        top: -30px;
+        padding: 4rem 0rem;
+        position: absolute;
+        text-align: center;
+        background-color: var(--cor-laranja-vermelho);
+        color: var(--cor-branco);
+        transition: 0.3s;
+    }
+
+    .LayoutMenuMobile.active {
+        left: 0%;
+    }
+
+    .itemMenu {
+        margin: 1rem 0rem;
+    }
+
+    .linkMenuMobile {
+        text-decoration: none;
+        color: var(--cor-branco);
+    }
+
+    .hamburguer {
+        cursor: pointer;
+        display:block;
+    }
+
+    .bar {
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: var(--cor-branco);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        background-color: var(--cor-preto);
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--cor-preto);
+    }
+
+    .formLogin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--cor-cinza-light);
+        border-radius: 8px;
+        padding-top: 1.8rem;
+        margin-bottom: 2rem;
+        
+    }
+}
+

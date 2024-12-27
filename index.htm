@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logotipo_branco.png">
+    <title>Projeto Web Front-End</title>
+</head>
+
+<body>
+    <!-- Tag header: Inicia a estrutura do conteúdo da página Web-->
+    <header id="topo">
+        <img src="images/logotipo_transparente.png" alt="Logotipo" title="Logotipo" class="imgLogotipo">
+        <section class="topo">
+            <ul class="LayoutMenuMobile">
+                <li class="itemMenu">
+                    <a href="https://facebook.com.br" target="_blank" class="linkMenuMobile">Facebook</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://instagram.com.br" target="_blank" class="linkMenuMobile">Instagram</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://youtube.com.br" target="_blank" class="linkMenuMobile">Youtube</a>
+                </li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="LayoutMenuDesktop">
+                <li class="itemMenu">
+                    <a href="https://facebook.com.br" target="_blank" class="linkMenu">Facebook</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://instagram.com.br" target="_blank" class="linkMenu">Instagram</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://youtube.com.br" target="_blank" class="linkMenu">Youtube</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <!-- TAG main centraliza todo conteúdo da página web. -->
+    <main id="container">
+        <h2>Formulário de Login: Faça seu acesso.</h2>
+        <h2>Caso não tenha conta faça seu cadastro.</h2>
+
+        <!-- Método de Envio de Dados POST: Envio de dados de forma oculta via protocolo HTTP/HTTPS. -->
+        <!-- Método de Envio de Dados GET: Ele envia os dados de forma aberta de forma aberta e visível, para URL do seu navegador -->
+        <!-- Caso o formulário não receba a especificação do Método de Envio, nativamente ele será GET -->
+
+        <section class="boxForm">
+            <div class="formLogin">
+                <img src="images/user.jpg" alt="Imagem do Usuário!" title="Imagem do Usuário!" class="imgUser">
+
+                <!--Formulário de Login-->
+                <form action="index.htm" method="GET" name="formLogin" onsubmit="return ValidarCamposLogin()">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite Aqui..." class="campLogin">
+                    <label>Digite sua Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite Aqui..." class="campLogin">
+                    <button name="btnlogin" class="btnLogin">Acessar</button>
+                </form>
+            </div>
+
+            <div class="formCadastro">
+                <!-- Fomulário de Cadastro. -->
+                <form action="index.htm" method="GET" name="formCadastro" onsubmit="return ValidarCamposCadastro()">
+                    <label>Digite seu Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Selecione sua Data de Nascimento:</label>
+                    <input type="date" id="data" class="campCadastro">
+                    <label>Digite seu CPF:</label>
+                    <input type="number" id="cpf" name="cpf" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite seu Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite seu Rua:</label>
+                    <input type="text" id="rua" name="rua" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite o Número do Local:</label>
+                    <input type="number" id="numero" name="local" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite seu CEP:</label>
+                    <input type="number" id="cep" name="cep" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite um Complemento:</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Digite Aqui..."
+                        class="campCadastro">
+                    <label>Digite um Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite Aqui..." class="campCadastro">
+                    <label>Digite novamente sua Senha:</label>
+                    <input type="password" id="repsenha" name="repsenha" placeholder="Digite Aqui..."
+                        class="campCadastro">
+                    <button name="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="end">
+        <section class="end">
+            <p>Copyright © 2024 - todos os direitos reservados.</p>
+            <img src="images/logotipo_branco.png" alt="Logotipo" title="Logotipo" class="imgLogotipoEnd">
+        </section>
+    </footer>
+
+    <!-- Chamada do Arquivo JavaScript. -->
+    <script src="js/validar_campos.js"></script>
+
+    <script src="js/menu_mobile.js"></script>
+
+</body>
+
+</html>

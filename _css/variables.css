@@ -1,0 +1,26 @@
+/* Arquivo com Variáveis Nativas do CSS. */
+@import url(./fonts.css);
+
+:root{
+    --cor-branco:#ffff;
+    --cor-preto:#000000;
+    --cor-cinza-medio:#363636;
+    --cor-cinza:#808080; 
+    --cor-cinza-light:#aaaaaa; 
+    --cor-cinza-dark:#292929; 
+    --cor-azul-dark:#000ba3;
+    --cor-azul: #0000ff;
+    --cor-laranja-vermelho:#ff4400;
+    --cor-tomate:#ff6347;
+    --cor-laranja:#ffa500;
+    --cor-vermelho:#ff0000;
+    --cor-verde:#008000;
+    --cor-verde-dark:#004119;
+    --cor-vermelho:#ffff00;
+
+    --fonte-titulo:Poppins-Medium;
+    --fonte-text:Poppins-Regular;
+    --fonte-alerta:Poppins-Black;
+
+
+}
